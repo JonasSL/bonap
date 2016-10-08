@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		561C39A80E17A11F8390AE17 /* Pods_Bonapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062B17F16697A4DDABB6CF8D /* Pods_Bonapp.framework */; };
+		E506D82F1DA6B7EF00DD735A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E506D82E1DA6B7EF00DD735A /* AppDelegate.swift */; };
+		E506D8311DA6B7EF00DD735A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E506D8301DA6B7EF00DD735A /* FirstViewController.swift */; };
+		E506D8361DA6B7EF00DD735A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E506D8341DA6B7EF00DD735A /* Main.storyboard */; };
+		E506D8381DA6B7EF00DD735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E506D8371DA6B7EF00DD735A /* Assets.xcassets */; };
+		E506D83B1DA6B7EF00DD735A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E506D8391DA6B7EF00DD735A /* LaunchScreen.storyboard */; };
+		E53FFFF11DA94A4600290203 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FFFF01DA94A4600290203 /* Receipt.swift */; };
+		E54832F41DA960C4007D7F7F /* ReceiptsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */; };
+		E54832F61DA98685007D7F7F /* ReceiptDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */; };
+		E57DAAD91DA8DF2C00957B98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E57DAAD81DA8DF2C00957B98 /* GoogleService-Info.plist */; };
+		E58FE7F71DA8E35600452AD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FE7F61DA8E35600452AD4 /* LoginVC.swift */; };
+		E5CCE1711DA993A4008327B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCE1701DA993A4008327B4 /* Constants.swift */; };
+		E5D9DA641DA6C4F700935A81 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9DA631DA6C4F700935A81 /* Line.swift */; };
+		E5D9DA661DA6C51F00935A81 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9DA651DA6C51F00935A81 /* Word.swift */; };
+		E5D9DA691DA6C53E00935A81 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9DA681DA6C53E00935A81 /* BoundingBox.swift */; };
+		E5E2AFA31DA7C5E4007F1815 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E5E2AFA21DA7C5E4007F1815 /* tessdata */; };
+		E5E2AFA51DA7CF3B007F1815 /* OCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2AFA41DA7CF3B007F1815 /* OCR.swift */; };
+		E5E2AFA71DA7CFC7007F1815 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2AFA61DA7CFC7007F1815 /* Store.swift */; };
+		E5E2AFAA1DA7D143007F1815 /* Føtex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2AFA91DA7D143007F1815 /* Føtex.swift */; };
+		E5E2AFAC1DA7D14B007F1815 /* Netto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E2AFAB1DA7D14B007F1815 /* Netto.swift */; };
+		E5EACE131DA8020500A86A66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EACE121DA8020500A86A66 /* Extensions.swift */; };
+		E5EACE151DA80B6900A86A66 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EACE141DA80B6900A86A66 /* Product.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		062B17F16697A4DDABB6CF8D /* Pods_Bonapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBD15B0D7EB0384009AB690 /* Pods-Bonapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bonapp/Pods-Bonapp.debug.xcconfig"; sourceTree = "<group>"; };
+		E506D82B1DA6B7EF00DD735A /* Bonapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E506D82E1DA6B7EF00DD735A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E506D8301DA6B7EF00DD735A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E506D8351DA6B7EF00DD735A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E506D8371DA6B7EF00DD735A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E506D83A1DA6B7EF00DD735A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E506D83C1DA6B7EF00DD735A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53FFFF01DA94A4600290203 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptsVC.swift; sourceTree = "<group>"; };
+		E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptDetailVC.swift; sourceTree = "<group>"; };
+		E57DAAD81DA8DF2C00957B98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E58FE7F61DA8E35600452AD4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E58FE7F81DA8E97A00452AD4 /* Bonapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bonapp.entitlements; sourceTree = "<group>"; };
+		E5CCE1701DA993A4008327B4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E5D9DA631DA6C4F700935A81 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E5D9DA651DA6C51F00935A81 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E5D9DA681DA6C53E00935A81 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		E5E2AF9E1DA7C27F007F1815 /* Bonapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bonapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5E2AFA21DA7C5E4007F1815 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = ../../../Downloads/tessdata; sourceTree = "<group>"; };
+		E5E2AFA41DA7CF3B007F1815 /* OCR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCR.swift; sourceTree = "<group>"; };
+		E5E2AFA61DA7CFC7007F1815 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E5E2AFA91DA7D143007F1815 /* Føtex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Føtex.swift"; sourceTree = "<group>"; };
+		E5E2AFAB1DA7D14B007F1815 /* Netto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Netto.swift; sourceTree = "<group>"; };
+		E5EACE121DA8020500A86A66 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E5EACE141DA80B6900A86A66 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		EDB9EBC53482554E368DBBA4 /* Pods-Bonapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bonapp/Pods-Bonapp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E506D8281DA6B7EE00DD735A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561C39A80E17A11F8390AE17 /* Pods_Bonapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FFED0E800142274DEB6D7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FBD15B0D7EB0384009AB690 /* Pods-Bonapp.debug.xcconfig */,
+				EDB9EBC53482554E368DBBA4 /* Pods-Bonapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF7ADE4EB572B8AEDC143C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062B17F16697A4DDABB6CF8D /* Pods_Bonapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E506D8221DA6B7EE00DD735A = {
+			isa = PBXGroup;
+			children = (
+				E506D82D1DA6B7EF00DD735A /* Bonapp */,
+				E506D82C1DA6B7EF00DD735A /* Products */,
+				79FFED0E800142274DEB6D7A /* Pods */,
+				AF7ADE4EB572B8AEDC143C5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E506D82C1DA6B7EF00DD735A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E506D82B1DA6B7EF00DD735A /* Bonapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E506D82D1DA6B7EF00DD735A /* Bonapp */ = {
+			isa = PBXGroup;
+			children = (
+				E58FE7F81DA8E97A00452AD4 /* Bonapp.entitlements */,
+				E57DAAD81DA8DF2C00957B98 /* GoogleService-Info.plist */,
+				E57D21201DA84DA9009E24C3 /* Storyboards */,
+				E506D8371DA6B7EF00DD735A /* Assets.xcassets */,
+				E57D211F1DA84D13009E24C3 /* Ressources */,
+				E57D211E1DA84D00009E24C3 /* Extra */,
+				E5D9DA621DA6C4B300935A81 /* Models */,
+				E5E2AFA21DA7C5E4007F1815 /* tessdata */,
+				E57D211D1DA84CCF009E24C3 /* ViewControllers */,
+			);
+			path = Bonapp;
+			sourceTree = "<group>";
+		};
+		E57D211D1DA84CCF009E24C3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E506D8301DA6B7EF00DD735A /* FirstViewController.swift */,
+				E58FE7F61DA8E35600452AD4 /* LoginVC.swift */,
+				E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */,
+				E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E57D211E1DA84D00009E24C3 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				E506D82E1DA6B7EF00DD735A /* AppDelegate.swift */,
+				E506D8391DA6B7EF00DD735A /* LaunchScreen.storyboard */,
+				E506D83C1DA6B7EF00DD735A /* Info.plist */,
+				E5E2AF9E1DA7C27F007F1815 /* Bonapp-Bridging-Header.h */,
+			);
+			name = Extra;
+			sourceTree = "<group>";
+		};
+		E57D211F1DA84D13009E24C3 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				E5EACE121DA8020500A86A66 /* Extensions.swift */,
+				E5E2AFA41DA7CF3B007F1815 /* OCR.swift */,
+				E5CCE1701DA993A4008327B4 /* Constants.swift */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		E57D21201DA84DA9009E24C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E506D8341DA6B7EF00DD735A /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		E5D9DA621DA6C4B300935A81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2AFA81DA7D137007F1815 /* Stores */,
+				E5D9DA631DA6C4F700935A81 /* Line.swift */,
+				E5D9DA651DA6C51F00935A81 /* Word.swift */,
+				E5D9DA681DA6C53E00935A81 /* BoundingBox.swift */,
+				E5E2AFA61DA7CFC7007F1815 /* Store.swift */,
+				E5EACE141DA80B6900A86A66 /* Product.swift */,
+				E53FFFF01DA94A4600290203 /* Receipt.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E5E2AFA81DA7D137007F1815 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				E5E2AFA91DA7D143007F1815 /* Føtex.swift */,
+				E5E2AFAB1DA7D14B007F1815 /* Netto.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E506D82A1DA6B7EE00DD735A /* Bonapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E506D83F1DA6B7EF00DD735A /* Build configuration list for PBXNativeTarget "Bonapp" */;
+			buildPhases = (
+				0320B0404AA79599EAE4B8BC /* [CP] Check Pods Manifest.lock */,
+				E506D8271DA6B7EE00DD735A /* Sources */,
+				E506D8281DA6B7EE00DD735A /* Frameworks */,
+				E506D8291DA6B7EE00DD735A /* Resources */,
+				EDDFB8D39948AB6147232D5F /* [CP] Embed Pods Frameworks */,
+				1DD5F83EA99D731E0C9A1FF1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bonapp;
+			productName = Bonapp;
+			productReference = E506D82B1DA6B7EF00DD735A /* Bonapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E506D8231DA6B7EE00DD735A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jonas Larsen";
+				TargetAttributes = {
+					E506D82A1DA6B7EE00DD735A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = P8F8F3278C;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E506D8261DA6B7EE00DD735A /* Build configuration list for PBXProject "Bonapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E506D8221DA6B7EE00DD735A;
+			productRefGroup = E506D82C1DA6B7EF00DD735A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E506D82A1DA6B7EE00DD735A /* Bonapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E506D8291DA6B7EE00DD735A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E506D83B1DA6B7EF00DD735A /* LaunchScreen.storyboard in Resources */,
+				E5E2AFA31DA7C5E4007F1815 /* tessdata in Resources */,
+				E57DAAD91DA8DF2C00957B98 /* GoogleService-Info.plist in Resources */,
+				E506D8381DA6B7EF00DD735A /* Assets.xcassets in Resources */,
+				E506D8361DA6B7EF00DD735A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0320B0404AA79599EAE4B8BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DD5F83EA99D731E0C9A1FF1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bonapp/Pods-Bonapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDDFB8D39948AB6147232D5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bonapp/Pods-Bonapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E506D8271DA6B7EE00DD735A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E2AFA71DA7CFC7007F1815 /* Store.swift in Sources */,
+				E5E2AFA51DA7CF3B007F1815 /* OCR.swift in Sources */,
+				E58FE7F71DA8E35600452AD4 /* LoginVC.swift in Sources */,
+				E54832F41DA960C4007D7F7F /* ReceiptsVC.swift in Sources */,
+				E53FFFF11DA94A4600290203 /* Receipt.swift in Sources */,
+				E5E2AFAC1DA7D14B007F1815 /* Netto.swift in Sources */,
+				E5D9DA691DA6C53E00935A81 /* BoundingBox.swift in Sources */,
+				E5CCE1711DA993A4008327B4 /* Constants.swift in Sources */,
+				E5D9DA641DA6C4F700935A81 /* Line.swift in Sources */,
+				E5EACE151DA80B6900A86A66 /* Product.swift in Sources */,
+				E5EACE131DA8020500A86A66 /* Extensions.swift in Sources */,
+				E5D9DA661DA6C51F00935A81 /* Word.swift in Sources */,
+				E5E2AFAA1DA7D143007F1815 /* Føtex.swift in Sources */,
+				E506D82F1DA6B7EF00DD735A /* AppDelegate.swift in Sources */,
+				E54832F61DA98685007D7F7F /* ReceiptDetailVC.swift in Sources */,
+				E506D8311DA6B7EF00DD735A /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E506D8341DA6B7EF00DD735A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E506D8351DA6B7EF00DD735A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E506D8391DA6B7EF00DD735A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E506D83A1DA6B7EF00DD735A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E506D83D1DA6B7EF00DD735A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E506D83E1DA6B7EF00DD735A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E506D8401DA6B7EF00DD735A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBD15B0D7EB0384009AB690 /* Pods-Bonapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bonapp/Bonapp.entitlements;
+				DEVELOPMENT_TEAM = P8F8F3278C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bonapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.jonassl.bonap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bonapp/Bonapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E506D8411DA6B7EF00DD735A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDB9EBC53482554E368DBBA4 /* Pods-Bonapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bonapp/Bonapp.entitlements;
+				DEVELOPMENT_TEAM = P8F8F3278C;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Bonapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.jonassl.bonap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bonapp/Bonapp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E506D8261DA6B7EE00DD735A /* Build configuration list for PBXProject "Bonapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E506D83D1DA6B7EF00DD735A /* Debug */,
+				E506D83E1DA6B7EF00DD735A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E506D83F1DA6B7EF00DD735A /* Build configuration list for PBXNativeTarget "Bonapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E506D8401DA6B7EF00DD735A /* Debug */,
+				E506D8411DA6B7EF00DD735A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E506D8231DA6B7EE00DD735A /* Project object */;
+}
