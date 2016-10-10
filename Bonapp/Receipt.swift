@@ -17,8 +17,10 @@ class Receipt {
     let ref: FIRDatabaseReference?
     var timestamp: Date
     var timeOfPurchase: Date?
+    var ownerUid: String
     
-    init(products: [Product], total: Double?, storeName: String?, timeOfPurchase: Date? = nil, key: String = "") {
+    
+    init(products: [Product], total: Double?, storeName: String?, ownerUid: String, timeOfPurchase: Date? = nil, key: String = "") {
         self.products = products
         self.total = total
         self.storeName = storeName
@@ -26,6 +28,7 @@ class Receipt {
         self.ref = nil
         timestamp = Date()
         self.timeOfPurchase = timeOfPurchase
+        self.ownerUid = ownerUid
     }
     
     init(snapshot: FIRDataSnapshot) {
@@ -35,8 +38,8 @@ class Receipt {
             self.products = []
             
             for child in products {
-                if let productSnap = child as? FIRDataSnapshot {
-                    self.products.append(Product(snapshot: productSnap))
+                if let dictionary = child as? NSDictionary {
+                    self.products.append(Product(dict: dictionary))
                 }
             }
         }
@@ -49,6 +52,8 @@ class Receipt {
         if let timeInterval = snapshotValue["timeOfPurchase"] as? NSNumber , timeInterval != -1 {
             self.timeOfPurchase = Date(timeIntervalSince1970: TimeInterval(timeInterval))
         }
+        
+        self.ownerUid = snapshotValue["ownerUid"] as! String
     }
     
     func toAnyObject() -> Dictionary<String, Any> {
@@ -59,6 +64,7 @@ class Receipt {
             } as NSArray,
             "total": (total ?? -1) as NSNumber,
             "store": storeName ?? "",
+            "ownerUid": ownerUid,
             "timestamp": timestamp.timeIntervalSince1970 as NSNumber,
             "timeOfPurchase": (timeOfPurchase?.timeIntervalSince1970 ?? -1) as NSNumber
         ]

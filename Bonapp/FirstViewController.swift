@@ -50,18 +50,7 @@ class FirstViewController: UIViewController, UINavigationControllerDelegate, UII
         
     }
     
-    func saveToDatabase(receipt: Receipt) {
-        // Get user
-        guard let user = FIRAuth.auth()?.currentUser else {
-            return
-        }
-        
-        // Get a unique
-        let ref = FIRDatabase.database().reference(withPath: user.uid).childByAutoId()
-        
-        ref.setValue(receipt.toAnyObject())
-        
-    }
+    
     
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -103,8 +92,13 @@ class FirstViewController: UIViewController, UINavigationControllerDelegate, UII
                     let storeName = stores.flatMap { store in
                         store.name != "" ? store.name : nil
                     }
-                    let receipt = Receipt(products: products, total: total, storeName: storeName.first ?? "")
-                    self.saveToDatabase(receipt: receipt)
+                    
+                    guard let user = FIRAuth.auth()?.currentUser else {
+                        return
+                    }
+                    
+                    let receipt = Receipt(products: products, total: total, storeName: storeName.first ?? "", ownerUid: user.uid)
+                    FirebaseUtility.write(receipt: receipt)
                 }
             }
         }

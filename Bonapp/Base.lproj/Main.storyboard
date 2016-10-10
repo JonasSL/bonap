@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Scan-->
+        <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Bonapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                             <constraint firstItem="7gm-YT-z8B" firstAttribute="top" secondItem="4Zo-9c-l5H" secondAttribute="bottom" constant="8" id="zYA-vT-KNV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scan" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="" image="Camera" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="activityIndicator" destination="KGl-OV-w6d" id="2bE-hW-uyk"/>
                         <outlet property="imageVIew" destination="4Zo-9c-l5H" id="dCN-gK-djd"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="1004" y="-390"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -82,101 +82,48 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="rq8-w7-OtQ" kind="relationship" relationship="viewControllers" id="LuU-bk-pcu"/>
+                        <segue destination="8Ek-RH-8Ae" kind="relationship" relationship="viewControllers" id="LuU-bk-pcu"/>
+                        <segue destination="SlP-h9-17Y" kind="relationship" relationship="viewControllers" id="k3y-xg-B4m"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="DcY-R8-5XO" kind="relationship" relationship="viewControllers" id="Frl-lI-wpe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Mine bonner-->
-        <scene sceneID="1ia-4E-TjZ">
+        <!--Groups-->
+        <scene sceneID="0H3-PZ-7kA">
             <objects>
-                <tableViewController id="JuO-Ws-ea7" customClass="ReceiptsVC" customModule="Bonapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="l7X-Ui-Wx0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="receiptCell" textLabel="uAS-1Z-hG4" detailTextLabel="jkQ-p3-VK8" style="IBUITableViewCellStyleValue1" id="AZE-bo-sYx">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AZE-bo-sYx" id="CJd-dw-a8L">
-                                    <frame key="frameInset" width="342" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uAS-1Z-hG4">
-                                            <frame key="frameInset" minX="15" minY="12" width="33.5" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jkQ-p3-VK8">
-                                            <frame key="frameInset" minX="296" minY="12" width="44" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="JuO-Ws-ea7" id="j1w-oF-yFb"/>
-                            <outlet property="delegate" destination="JuO-Ws-ea7" id="mHi-9R-1ly"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Mine bonner" id="jMG-GH-5QJ"/>
-                    <connections>
-                        <segue destination="c8w-PO-CjW" kind="show" identifier="toDetail" id="cfw-Tw-PkY"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6TB-pP-wta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Groups" id="DcY-R8-5XO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="WYi-ui-vC3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qB5-SW-rtE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="473"/>
+            <point key="canvasLocation" x="1003" y="287"/>
         </scene>
-        <!--Receipt DetailVC-->
-        <scene sceneID="Zok-h4-Ols">
+        <!--Receipts-->
+        <scene sceneID="1Br-TF-Vg3">
             <objects>
-                <viewController id="c8w-PO-CjW" customClass="ReceiptDetailVC" customModule="Bonapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4JC-L9-Kzr"/>
-                        <viewControllerLayoutGuide type="bottom" id="KpM-Tl-Yhz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="txr-QU-UeX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fao-05-7uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Receipts" id="8Ek-RH-8Ae" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="xxF-91-5Jt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wu-hk-T5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2601" y="473"/>
+            <point key="canvasLocation" x="996" y="216"/>
         </scene>
-        <!--Mine Bonner-->
-        <scene sceneID="2VI-bI-uVb">
+        <!--Statistics-->
+        <scene sceneID="Dn7-Hd-aEJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rq8-w7-OtQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mine Bonner" image="first" selectedImage="first" id="yUE-pI-i6W"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kWw-1o-RDy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JuO-Ws-ea7" kind="relationship" relationship="rootViewController" id="xoC-M6-AVn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U9e-1V-DpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Statistics" id="SlP-h9-17Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lQ0-0K-Ojz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSa-fG-VHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="473"/>
+            <point key="canvasLocation" x="992" y="164"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Camera" width="25" height="25"/>
     </resources>
 </document>

@@ -37,6 +37,14 @@ class Product {
         ref = snapshot.ref
     }
     
+    init(dict: NSDictionary) {
+        key = ""
+        name = dict.value(forKey: "name") as? String
+        let pri = dict.value(forKey: "price") as? Double
+        price = pri != -1 ? pri : nil
+        ref = nil
+    }
+    
     func toAnyObject() -> Dictionary<String, Any> {
         let nameToSave = name ?? ""
         let priceToSave = price ?? -1

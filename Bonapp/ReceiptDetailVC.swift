@@ -40,6 +40,18 @@ class ReceiptDetailVC: FormViewController {
                 row.dateFormatter = formatter
             }
         
+        if !receipt.products.isEmpty {
+            form +++ Section("Produkter")
+        }
+        
+        for product in receipt.products {
+            form.last! <<< TextRow(){ row in
+                row.title = product.name ?? "Ukendt"
+                row.value = "\(product.price ?? 0)"
+                row.disabled = true
+            }
+        }
+        
     }
     
     
