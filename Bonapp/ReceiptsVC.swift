@@ -37,23 +37,30 @@ class ReceiptsVC: UITableViewController {
                 (child as! FIRDataSnapshot).key
             }
             
+            // Rmeove all which is not included in the new key set
+            // Get all index which is not contained in the new list
+//            let indexToRemove = self.receipts.index { receipt in
+//                !newReceipts.contains(receipt.key)
+//            }
+//            
+//            // Remove the receipt
+//            if let i = indexToRemove {
+//                self.receipts.remove(at: i)
+//            }
             self.receipts.removeAll()
             for receiptId in newReceipts {
-                FirebaseUtility.read(receiptId: receiptId) { receipt in
-                    // Remove the old with the same key
-                    
-//                    // FInd the old
-//                    let index = self.receipts.index { receiptInArr in
-//                        receiptInArr.key == receipt.key
-//                    }
-//                    
-//                    if let i = index {
-//                        self.receipts.remove(at: i)
-//                    }
-//                    
+                FirebaseUtility.read(receiptId: receiptId) { (receipt: Receipt) in
                     // Insert receipt and reload table
+                    
+                    // Append if it doesnt contain
+//                    let ids = self.receipts.map{ receipt in receipt.key}
+//                    if ids.contains(receipt.key) {
+//                        
+                    
                     self.receipts.append(receipt)
-                    self.tableView.reloadSections([0], with: .automatic)
+                    if newReceipts.last == receiptId {
+                        self.tableView.reloadSections([0], with: .automatic)
+                    }
                 }
             }
         })

@@ -20,3 +20,12 @@ extension Array where Element : Equatable {
         return uniqueValues
     }
 }
+
+extension Date {
+    func formatted(withDateStyle dateStyle: DateFormatter.Style, andTimeStyle timeStyle: DateFormatter.Style) -> String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = timeStyle
+        formatter.dateStyle = dateStyle
+        return formatter.string(from: self)
+    }
+}

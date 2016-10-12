@@ -14,16 +14,25 @@
 		E506D8381DA6B7EF00DD735A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E506D8371DA6B7EF00DD735A /* Assets.xcassets */; };
 		E506D83B1DA6B7EF00DD735A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E506D8391DA6B7EF00DD735A /* LaunchScreen.storyboard */; };
 		E53FFFF11DA94A4600290203 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FFFF01DA94A4600290203 /* Receipt.swift */; };
+		E541BDFA1DAE47750057F47F /* GroupDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E541BDF91DAE47740057F47F /* GroupDetailVC.swift */; };
 		E54832F41DA960C4007D7F7F /* ReceiptsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */; };
 		E54832F61DA98685007D7F7F /* ReceiptDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */; };
+		E54871AE1DACF1B6006E55F8 /* Levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54871AD1DACF1B6006E55F8 /* Levenshtein.swift */; };
 		E57CE04B1DAAD92C00BBA3CE /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57CE0491DAAD92C00BBA3CE /* Groups.storyboard */; };
 		E57CE04D1DAAD95100BBA3CE /* Receipts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57CE04C1DAAD95100BBA3CE /* Receipts.storyboard */; };
 		E57CE0501DAAD96E00BBA3CE /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57CE04E1DAAD96E00BBA3CE /* Statistics.storyboard */; };
 		E57DAAD91DA8DF2C00957B98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E57DAAD81DA8DF2C00957B98 /* GoogleService-Info.plist */; };
+		E587FB061DAE5B1D00D6CE2C /* ReceiptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587FB041DAE5B1D00D6CE2C /* ReceiptCell.swift */; };
+		E587FB071DAE5B1D00D6CE2C /* ReceiptCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E587FB051DAE5B1D00D6CE2C /* ReceiptCell.xib */; };
+		E587FB151DAE703A00D6CE2C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E587FB101DAE701900D6CE2C /* Charts.framework */; };
+		E587FB161DAE703A00D6CE2C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E587FB101DAE701900D6CE2C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E587FB1E1DAE707A00D6CE2C /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E587FB1C1DAE707A00D6CE2C /* ChartCell.swift */; };
+		E587FB1F1DAE707A00D6CE2C /* ChartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E587FB1D1DAE707A00D6CE2C /* ChartCell.xib */; };
 		E58FE7F71DA8E35600452AD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FE7F61DA8E35600452AD4 /* LoginVC.swift */; };
 		E59042191DAC121A001EED03 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59042181DAC121A001EED03 /* GroupsVC.swift */; };
 		E590421B1DAC1294001EED03 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590421A1DAC1294001EED03 /* Group.swift */; };
 		E590421D1DAC16FB001EED03 /* FirebaseUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590421C1DAC16FB001EED03 /* FirebaseUtility.swift */; };
+		E590421F1DAC2D08001EED03 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E590421E1DAC2D08001EED03 /* FirebaseModel.swift */; };
 		E5CCE1711DA993A4008327B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCE1701DA993A4008327B4 /* Constants.swift */; };
 		E5D9DA641DA6C4F700935A81 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9DA631DA6C4F700935A81 /* Line.swift */; };
 		E5D9DA661DA6C51F00935A81 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D9DA651DA6C51F00935A81 /* Word.swift */; };
@@ -37,6 +46,51 @@
 		E5EACE151DA80B6900A86A66 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EACE141DA80B6900A86A66 /* Product.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E587FB0F1DAE701900D6CE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E587FB091DAE701900D6CE2C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		E587FB111DAE701900D6CE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E587FB091DAE701900D6CE2C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		E587FB131DAE701900D6CE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E587FB091DAE701900D6CE2C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		E587FB171DAE703A00D6CE2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E587FB091DAE701900D6CE2C /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E587FB191DAE703A00D6CE2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E587FB161DAE703A00D6CE2C /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		062B17F16697A4DDABB6CF8D /* Pods_Bonapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bonapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FBD15B0D7EB0384009AB690 /* Pods-Bonapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bonapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bonapp/Pods-Bonapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,17 +102,25 @@
 		E506D83A1DA6B7EF00DD735A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E506D83C1DA6B7EF00DD735A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53FFFF01DA94A4600290203 /* Receipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		E541BDF91DAE47740057F47F /* GroupDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupDetailVC.swift; sourceTree = "<group>"; };
 		E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptsVC.swift; sourceTree = "<group>"; };
 		E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptDetailVC.swift; sourceTree = "<group>"; };
+		E54871AD1DACF1B6006E55F8 /* Levenshtein.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Levenshtein.swift; sourceTree = "<group>"; };
 		E57CE04A1DAAD92C00BBA3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Groups.storyboard; sourceTree = "<group>"; };
 		E57CE04C1DAAD95100BBA3CE /* Receipts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Receipts.storyboard; sourceTree = "<group>"; };
 		E57CE04F1DAAD96E00BBA3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Statistics.storyboard; sourceTree = "<group>"; };
 		E57DAAD81DA8DF2C00957B98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E587FB041DAE5B1D00D6CE2C /* ReceiptCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptCell.swift; sourceTree = "<group>"; };
+		E587FB051DAE5B1D00D6CE2C /* ReceiptCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptCell.xib; sourceTree = "<group>"; };
+		E587FB091DAE701900D6CE2C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		E587FB1C1DAE707A00D6CE2C /* ChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		E587FB1D1DAE707A00D6CE2C /* ChartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartCell.xib; sourceTree = "<group>"; };
 		E58FE7F61DA8E35600452AD4 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E58FE7F81DA8E97A00452AD4 /* Bonapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bonapp.entitlements; sourceTree = "<group>"; };
 		E59042181DAC121A001EED03 /* GroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsVC.swift; sourceTree = "<group>"; };
 		E590421A1DAC1294001EED03 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		E590421C1DAC16FB001EED03 /* FirebaseUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUtility.swift; sourceTree = "<group>"; };
+		E590421E1DAC2D08001EED03 /* FirebaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		E5CCE1701DA993A4008327B4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E5D9DA631DA6C4F700935A81 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		E5D9DA651DA6C51F00935A81 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
@@ -80,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				561C39A80E17A11F8390AE17 /* Pods_Bonapp.framework in Frameworks */,
+				E587FB151DAE703A00D6CE2C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +169,7 @@
 		E506D8221DA6B7EE00DD735A = {
 			isa = PBXGroup;
 			children = (
+				E587FB091DAE701900D6CE2C /* Charts.xcodeproj */,
 				E506D82D1DA6B7EF00DD735A /* Bonapp */,
 				E506D82C1DA6B7EF00DD735A /* Products */,
 				79FFED0E800142274DEB6D7A /* Pods */,
@@ -145,6 +209,7 @@
 				E54832F31DA960C4007D7F7F /* ReceiptsVC.swift */,
 				E54832F51DA98685007D7F7F /* ReceiptDetailVC.swift */,
 				E59042181DAC121A001EED03 /* GroupsVC.swift */,
+				E541BDF91DAE47740057F47F /* GroupDetailVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -163,10 +228,12 @@
 		E57D211F1DA84D13009E24C3 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				E587FB031DAE5B0000D6CE2C /* Cells */,
 				E5EACE121DA8020500A86A66 /* Extensions.swift */,
 				E5E2AFA41DA7CF3B007F1815 /* OCR.swift */,
 				E5CCE1701DA993A4008327B4 /* Constants.swift */,
 				E590421C1DAC16FB001EED03 /* FirebaseUtility.swift */,
+				E54871AD1DACF1B6006E55F8 /* Levenshtein.swift */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -182,6 +249,27 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		E587FB031DAE5B0000D6CE2C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E587FB041DAE5B1D00D6CE2C /* ReceiptCell.swift */,
+				E587FB051DAE5B1D00D6CE2C /* ReceiptCell.xib */,
+				E587FB1C1DAE707A00D6CE2C /* ChartCell.swift */,
+				E587FB1D1DAE707A00D6CE2C /* ChartCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E587FB0A1DAE701900D6CE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E587FB101DAE701900D6CE2C /* Charts.framework */,
+				E587FB121DAE701900D6CE2C /* ChartsRealm.framework */,
+				E587FB141DAE701900D6CE2C /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E5D9DA621DA6C4B300935A81 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +281,7 @@
 				E5EACE141DA80B6900A86A66 /* Product.swift */,
 				E53FFFF01DA94A4600290203 /* Receipt.swift */,
 				E590421A1DAC1294001EED03 /* Group.swift */,
+				E590421E1DAC2D08001EED03 /* FirebaseModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -219,10 +308,12 @@
 				E506D8291DA6B7EE00DD735A /* Resources */,
 				EDDFB8D39948AB6147232D5F /* [CP] Embed Pods Frameworks */,
 				1DD5F83EA99D731E0C9A1FF1 /* [CP] Copy Pods Resources */,
+				E587FB191DAE703A00D6CE2C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E587FB181DAE703A00D6CE2C /* PBXTargetDependency */,
 			);
 			name = Bonapp;
 			productName = Bonapp;
@@ -263,6 +354,12 @@
 			mainGroup = E506D8221DA6B7EE00DD735A;
 			productRefGroup = E506D82C1DA6B7EF00DD735A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E587FB0A1DAE701900D6CE2C /* Products */;
+					ProjectRef = E587FB091DAE701900D6CE2C /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E506D82A1DA6B7EE00DD735A /* Bonapp */,
@@ -270,15 +367,41 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		E587FB101DAE701900D6CE2C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = E587FB0F1DAE701900D6CE2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E587FB121DAE701900D6CE2C /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = E587FB111DAE701900D6CE2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E587FB141DAE701900D6CE2C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = E587FB131DAE701900D6CE2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		E506D8291DA6B7EE00DD735A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E587FB1F1DAE707A00D6CE2C /* ChartCell.xib in Resources */,
 				E506D83B1DA6B7EF00DD735A /* LaunchScreen.storyboard in Resources */,
 				E5E2AFA31DA7C5E4007F1815 /* tessdata in Resources */,
 				E57CE04B1DAAD92C00BBA3CE /* Groups.storyboard in Resources */,
 				E57DAAD91DA8DF2C00957B98 /* GoogleService-Info.plist in Resources */,
+				E587FB071DAE5B1D00D6CE2C /* ReceiptCell.xib in Resources */,
 				E506D8381DA6B7EF00DD735A /* Assets.xcassets in Resources */,
 				E57CE04D1DAAD95100BBA3CE /* Receipts.storyboard in Resources */,
 				E506D8361DA6B7EF00DD735A /* Main.storyboard in Resources */,
@@ -345,13 +468,17 @@
 				E5E2AFA51DA7CF3B007F1815 /* OCR.swift in Sources */,
 				E58FE7F71DA8E35600452AD4 /* LoginVC.swift in Sources */,
 				E54832F41DA960C4007D7F7F /* ReceiptsVC.swift in Sources */,
+				E590421F1DAC2D08001EED03 /* FirebaseModel.swift in Sources */,
+				E541BDFA1DAE47750057F47F /* GroupDetailVC.swift in Sources */,
 				E53FFFF11DA94A4600290203 /* Receipt.swift in Sources */,
 				E5E2AFAC1DA7D14B007F1815 /* Netto.swift in Sources */,
 				E5D9DA691DA6C53E00935A81 /* BoundingBox.swift in Sources */,
 				E59042191DAC121A001EED03 /* GroupsVC.swift in Sources */,
 				E5CCE1711DA993A4008327B4 /* Constants.swift in Sources */,
 				E590421B1DAC1294001EED03 /* Group.swift in Sources */,
+				E587FB1E1DAE707A00D6CE2C /* ChartCell.swift in Sources */,
 				E590421D1DAC16FB001EED03 /* FirebaseUtility.swift in Sources */,
+				E587FB061DAE5B1D00D6CE2C /* ReceiptCell.swift in Sources */,
 				E5D9DA641DA6C4F700935A81 /* Line.swift in Sources */,
 				E5EACE151DA80B6900A86A66 /* Product.swift in Sources */,
 				E5EACE131DA8020500A86A66 /* Extensions.swift in Sources */,
@@ -359,11 +486,20 @@
 				E5E2AFAA1DA7D143007F1815 /* Føtex.swift in Sources */,
 				E506D82F1DA6B7EF00DD735A /* AppDelegate.swift in Sources */,
 				E54832F61DA98685007D7F7F /* ReceiptDetailVC.swift in Sources */,
+				E54871AE1DACF1B6006E55F8 /* Levenshtein.swift in Sources */,
 				E506D8311DA6B7EF00DD735A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E587FB181DAE703A00D6CE2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = E587FB171DAE703A00D6CE2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E506D8341DA6B7EF00DD735A /* Main.storyboard */ = {
@@ -500,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5FBD15B0D7EB0384009AB690 /* Pods-Bonapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bonapp/Bonapp.entitlements;
@@ -520,6 +657,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EDB9EBC53482554E368DBBA4 /* Pods-Bonapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bonapp/Bonapp.entitlements;

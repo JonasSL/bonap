@@ -40,12 +40,12 @@ class FirstViewController: UIViewController, UINavigationControllerDelegate, UII
     }
 
     @IBAction func takePhoto(_ sender: AnyObject) {
-        imagePicker =  UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
+//        imagePicker =  UIImagePickerController()
+//        imagePicker.delegate = self
+//        imagePicker.sourceType = .camera
+//        present(imagePicker, animated: true, completion: nil)
         
-//        analysePicture(image: #imageLiteral(resourceName: "føtexBon"))
+        analysePicture(image: #imageLiteral(resourceName: "føtexBon"))
         
         
     }
@@ -258,6 +258,10 @@ class FirstViewController: UIViewController, UINavigationControllerDelegate, UII
         
         
         debugPrint("deviationWords: \(deviationWords.map {$0.text})")
+    }
+    
+    @IBAction func logOutPressed(_ sender: AnyObject) {
+        try?    FIRAuth.auth()?.signOut()
     }
 }
 

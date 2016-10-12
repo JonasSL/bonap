@@ -9,7 +9,7 @@
 import Foundation
 import FirebaseDatabase
 
-class Receipt {
+class Receipt: FirebaseModel {
     var products: [Product] = []
     var total: Double?
     var storeName: String?
@@ -31,7 +31,7 @@ class Receipt {
         self.ownerUid = ownerUid
     }
     
-    init(snapshot: FIRDataSnapshot) {
+    required init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
         if let products = snapshotValue["products"] as? NSArray {

@@ -11,6 +11,7 @@ import Firebase
 
 class FirebaseUtility {
     
+    //MARK: - Write
     static func write(receipt: Receipt) {
         // Get user
         guard let user = FIRAuth.auth()?.currentUser else {
@@ -31,14 +32,52 @@ class FirebaseUtility {
         
     }
     
-    static func read(receiptId id: String, callback: @escaping (Receipt) -> ()) {
-        let receiptRef = FIRDatabase.database().reference(withPath: "receipts/\(id)")
+    static func write(receipt: Receipt, toGroupId groupId: String) {
+        // Get a unique
+        let receiptRef = FIRDatabase.database().reference(withPath: "groups/\(groupId)/receipts/\(receipt.key)")
+        
+        // Set arbitrary value for the key
+        receiptRef.setValue(true)
+    }
+    
+    //MARK: - Read
+    
+    static func read(receiptId: String, callback: @escaping (Receipt) -> ()) {
+        
+        let receiptRef = FIRDatabase.database().reference(withPath: "receipts/\(receiptId)")
         // Observe single event and do callback
         receiptRef.observeSingleEvent(of: .value, with: { snapshot in
             callback(Receipt(snapshot: snapshot))
         })
     }
     
+    static func read(groupId: String, callback: @escaping (Group) -> ()) {
+        
+        let receiptRef = FIRDatabase.database().reference(withPath: "groups/\(groupId)")
+        // Observe single event and do callback
+        receiptRef.observeSingleEvent(of: .value, with: { snapshot in
+            callback(Group(snapshot: snapshot))
+        })
+    }
+    
+    static func read<T: FirebaseModel>(id: String, callback: @escaping (T) -> ()) {
+        
+        var path = ""
+        
+        if type(of: T.self) == Group.self {
+            path = "groups/\(id)"
+        } else if type(of: T.self) == Receipt.self {
+            path = "receipts/\(id)"
+        }
+        
+        let receiptRef = FIRDatabase.database().reference(withPath: path)
+        // Observe single event and do callback
+        receiptRef.observeSingleEvent(of: .value, with: { snapshot in
+            callback(T(snapshot: snapshot))
+        })
+    }
+    
+    //MARK: - Delete
     static func delete(receipt: Receipt) {
         // Remove in receipt section
         receipt.ref?.removeValue()
@@ -51,4 +90,6 @@ class FirebaseUtility {
         let userRef = FIRDatabase.database().reference(withPath: "users/\(user.uid)/receipts/\(receipt.key)")
         userRef.removeValue()
     }
+    
+    
 }

@@ -53,7 +53,7 @@ class OCR {
     
     static func getTotalAmount(_ text: String, store: Store?) -> [Double] {
         
-        let generalPattern = "(total|otal|rral|dankurt|dankort|ankort).*\\d+.*\\d+.*"
+        let generalPattern = "\\w+.*\\d+.*\\d{0-2}.*"
         
         let pattern = store?.getTotalRegExp() ?? generalPattern
         
@@ -64,8 +64,18 @@ class OCR {
             matches(for: pattern, in: line)
         }
         
+        let wordRegex = "\\w+"
+        //Find lines which match total keyword
+        let totalResults = results.filter { line in
+            guard let word = matches(for: wordRegex, in: line).first else {
+                return false
+            }
+            
+            return Levenshtein.distanceBetween(aStr: word.lowercased(), and: "total") <= 1
+        }
+        
         debugPrint(results)
-        let numbers = results.flatMap { res in
+        let numbers = totalResults.flatMap { res in
             extractNumberFrom(line: res)
         }
         

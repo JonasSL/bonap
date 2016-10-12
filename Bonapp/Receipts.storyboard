@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rq8-w7-OtQ">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rq8-w7-OtQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,7 +56,7 @@
         <!--Receipt DetailVC-->
         <scene sceneID="Zok-h4-Ols">
             <objects>
-                <viewController id="c8w-PO-CjW" customClass="ReceiptDetailVC" customModule="Bonapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="receiptDetails" id="c8w-PO-CjW" customClass="ReceiptDetailVC" customModule="Bonapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4JC-L9-Kzr"/>
                         <viewControllerLayoutGuide type="bottom" id="KpM-Tl-Yhz"/>
@@ -66,6 +66,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UlW-oE-rQZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="k2S-ji-fEP">
+                            <connections>
+                                <action selector="didPressAdd:" destination="c8w-PO-CjW" id="3dC-bO-fxR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fao-05-7uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,10 +85,10 @@
                     <tabBarItem key="tabBarItem" title="Mine Bonner" image="first" selectedImage="first" id="yUE-pI-i6W"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kWw-1o-RDy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
